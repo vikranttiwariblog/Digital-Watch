@@ -1,0 +1,21 @@
+
+body{
+    background: grey;
+}
+
+#btn1{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+
+#btn2 , #btn3{
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 0.5rem;
+    margin-left: 10px;
+}
+
+.cls{
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Digital Watch</title>
+</head>
+<body>
+
+    <p id="btn1"></p>
+    <div class="cls">
+        <button id="btn2">strat</button>
+        <button id="btn3">stop</button>
+    </div>
+
+    <script>
+        let btn2 = document.getElementById("btn2");
+        let btn3 = document.getElementById("btn3");
+        let stop;
+
+        btn2.addEventListener("click",function(){
+            stop = setInterval(function(){
+                let time = new Date().toLocaleTimeString();
+                document.getElementById("btn1").innerHTML = time;
+            },1000)
+        })
+
+        btn3.addEventListener("click",function(){
+            clearInterval(stop);
+        })
+    </script>
+
+</body>
+</html>
